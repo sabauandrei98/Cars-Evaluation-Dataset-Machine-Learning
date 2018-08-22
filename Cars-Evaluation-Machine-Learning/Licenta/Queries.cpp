@@ -5,8 +5,8 @@ void Queries::runQueries()
 	///CONSOLE LOG INFO
 	HANDLE hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	cout << endl << endl << "===Running Queries===" << endl << endl;
-	cout << "Queries: " << this->queriesSet.size() << endl;
+	cout << endl << endl << "===Running Queries===\n\n";
+	cout << "Queries: " << this->queriesSet.size() << '\n';
 
 
 	Tools tools;
@@ -25,14 +25,14 @@ void Queries::runQueries()
 			SetConsoleTextAttribute(hConsole, 10);
 		else
 			SetConsoleTextAttribute(hConsole, 12);
-		cout << "Query:" << setIndex << " [db=" << treeValue << "] [query=" << queryValue << "]" << endl;
+		cout << "Query:" << setIndex << " [db=" << treeValue << "] [query=" << queryValue << "]\n";
 	}
 
 	///CONSOLE LOG INFO
 	SetConsoleTextAttribute(hConsole, 7);
-	cout << endl << "===Queries results===" << endl;
+	cout << endl << "===Queries results===\n";
 	cout << "Passed " << this->queriesSet.size() - failedQueries << " out of " << this->queriesSet.size() << " (" <<
-		(double)(this->queriesSet.size() - failedQueries) / this->queriesSet.size() * 100 << "%)" << endl;
+		(double)(this->queriesSet.size() - failedQueries) / this->queriesSet.size() * 100 << "%)\n";
 }
 
 void Queries::findQueryValue(Node* node, Car& query, string& result)

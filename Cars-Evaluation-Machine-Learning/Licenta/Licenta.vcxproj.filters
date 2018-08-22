@@ -56,6 +56,9 @@
     <ClCompile Include="ConfusionMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
@@ -98,6 +101,9 @@
       <Filter>Resource Files\Tests</Filter>
     </ClInclude>
     <ClInclude Include="ConfusionMatrix.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>

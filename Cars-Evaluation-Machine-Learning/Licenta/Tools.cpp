@@ -11,6 +11,16 @@ vector<string> Tools::tokenize(string str, char delimiter)
 	return result;
 }
 
+bool Tools::tryParse(string& input, int& output) {
+	try {
+		output = stoi(input);
+	}
+	catch (std::invalid_argument) {
+		return false;
+	}
+	return true;
+}
+
 int Tools::initialFeatureIndex(string feature)
 {
 	if (feature == "buying")

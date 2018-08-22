@@ -160,6 +160,7 @@
     <ClCompile Include="TestsControler.cpp" />
     <ClCompile Include="Tools.cpp" />
     <ClCompile Include="ToolsTests.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="TestsControler.h" />
     <ClInclude Include="Tools.h" />
     <ClInclude Include="ToolsTests.h" />
+    <ClInclude Include="UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

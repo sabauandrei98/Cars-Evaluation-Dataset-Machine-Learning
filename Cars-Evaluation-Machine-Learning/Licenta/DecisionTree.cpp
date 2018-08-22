@@ -3,8 +3,8 @@
 DecisionTree::DecisionTree(vector<Car>& learningSet, vector<string>& featureSet)
 {
 	///CONSOLE LOG INFO
-	cout << "===Decision Tree===" << endl;
-	cout << "Showing clear paths and their final values:" << endl << endl;
+	cout << "===Decision Tree===\n";
+	cout << "Showing clear paths and their final values:\n\n";
 
 	Node* node = new Node;
 	node->carFeature = "root";
@@ -29,7 +29,7 @@ void DecisionTree::buildTree(Node* node, string path)
 			path += node->carFeature + "." + node->carProperty + " -> ";
 
 			///CONSOLE LOG INFO
-			cout << "Path: " << path << " [" << node->similarityInfo.second << "]" << endl;
+			cout << "Path: " << path << " [" << node->similarityInfo.second << "]\n";
 
 			return;
 		}
@@ -183,5 +183,25 @@ double DecisionTree::calculatePropertyEntropy(vector<Car>& table, int carFeature
 		propertyEntropy -= probability * log2(probability);
 	}
 	return (double)(carPropertyValue_occurrences) / table.size() * propertyEntropy;
+}
+
+void DecisionTree::cutTree(Node* node)
+{
+	if (node->next.size() == 0)
+	{
+		delete node;
+		return;
+	}
+
+	for (int childIndex = 0; childIndex < node->next.size(); childIndex++)
+	{
+		cutTree(node->next[childIndex]);
+	}
+	delete node;
+}
+
+DecisionTree::~DecisionTree()
+{
+	cutTree(root);
 }
 

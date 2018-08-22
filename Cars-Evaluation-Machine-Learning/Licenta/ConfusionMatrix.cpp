@@ -3,7 +3,7 @@
 ConfusionMatrix::ConfusionMatrix(vector<pair<int, int>>& queriesResults)
 {
 	///CONSOLE LOG INFO
-	cout << endl << endl << "===CONFUSION MATRIX===" << endl;
+	cout <<"\n\n===CONFUSION MATRIX===\n";
 
 	for (int index = 0; index < queriesResults.size(); index++)
 		matrix[queriesResults[index].first][queriesResults[index].second]++;
@@ -13,22 +13,26 @@ ConfusionMatrix::ConfusionMatrix(vector<pair<int, int>>& queriesResults)
 
 void ConfusionMatrix::printConfusionMatrix()
 {
-	for (int row = 1; row <= 4; row++)
+	int confusionMatrixRows = 4;
+	int confusionMatrixColumns = 4;
+	int emptySpacesSize = 3;
+
+	for (int row = 1; row <= confusionMatrixRows; row++)
 	{
-		for (int col = 1; col <= 4; col++)
+		for (int col = 1; col <= confusionMatrixColumns; col++)
 		{
-			int aux = max(matrix[row][col], 1);
-			int sz = 0;
-			while (aux)
+			int matrixElement = max(matrix[row][col], 1);
+			int matrixElementSize = 0;
+			while (matrixElement)
 			{
-				aux /= 10;
-				sz++;
+				matrixElement /= 10;
+				matrixElementSize++;
 			}
-			for (int i = 1; i <= (3 - sz); i++)
+			for (int i = 1; i <= (emptySpacesSize - matrixElementSize); i++)
 				cout << " ";
 			cout << matrix[row][col] << " | ";
 		}
-		cout << endl;
+		cout << '\n';
 	}
 }
 

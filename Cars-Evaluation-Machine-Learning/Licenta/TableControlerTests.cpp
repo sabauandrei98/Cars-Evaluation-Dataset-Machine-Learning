@@ -19,6 +19,7 @@ void TableControlerTests::filterPropertyTests()
 	assert(node->cars.size() == 576);
 	node->cars = tableControler.filterProperty(node, "persons", "2");
 	assert(node->cars.size() == 192);
+	delete node;
 }
 
 void TableControlerTests::removeFeatureTests()
@@ -34,6 +35,7 @@ void TableControlerTests::removeFeatureTests()
 	assert(node->cars[0].carProperty.size() == 5);
 	node->cars = tableControler.removeFeature(node, "main");
 	assert(node->cars[0].carProperty.size() == 4);
+	delete node;
 }
 
 void TableControlerTests::getFeatureIndexTests()
@@ -47,5 +49,5 @@ void TableControlerTests::getFeatureIndexTests()
 	assert(tableControler.getFeatureIndex(node, "buying") == 1);
 	assert(tableControler.getFeatureIndex(node, "main") == 2);
 	assert(tableControler.getFeatureIndex(node, "ddasasd") == -1);
-	
+	delete node;
 }

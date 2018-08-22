@@ -151,22 +151,16 @@ void ToolsTests::trueValuesTests()
 void ToolsTests::shuffleVectorTests()
 {
 	vector<int> list;
-	list.push_back(1);
-	list.push_back(2);
-	list.push_back(3);
-	list.push_back(4);
-	list.push_back(5);
-	list.push_back(6);
-	list.push_back(7);
-	list.push_back(8);
-	list.push_back(9);
-	list.push_back(10);
-	for (int i = 0; i <= 100; i++)
+	for (int i = 0; i < 100; i++)
+		list.push_back(i);
+
+	int numberOfTests = 10;
+	for (int i = 0; i < numberOfTests; i++)
 	{
 		tools.shuffleVector(list);
 		bool ok = true;
 		for (int j = 0; j < list.size(); j++)
-			if (list[j] != j + 1)
+			if (list[j] != j)
 				ok = false;
 
 		if (ok)

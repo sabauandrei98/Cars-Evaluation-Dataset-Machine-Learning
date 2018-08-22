@@ -27,11 +27,22 @@ public:
 	DecisionTree(vector<Car>& learning, vector<string>& feature);
 
 	/*
+	Class desctructor, responsible for clearing memory leaks
+	*/
+	~DecisionTree();
+
+	/*
 	The main function of the class, generates recursively a tree node
 	@param node Pointer to current node
 	@param path Path from the root to the current node
 	*/
 	void buildTree(Node* node, string path);
+
+	/*
+	The function responsible for dealicating memory of a given node
+	@param node Pointer to current node
+	*/
+	void cutTree(Node* node);
 
 	/*
 	Returns pointer to the tree root

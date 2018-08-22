@@ -88,6 +88,13 @@ public:
 	string getFeatureProperty(string carFeature, int propertyValue);
 
 	/*
+	Returns a true if the input can be parsed to int
+	@param input The line to be checked
+	@param output The result in case of successful operation
+	*/
+	bool tryParse(string& input, int& output);
+
+	/*
 	Shuffle a container
 	@param first Iterator pointing to first element
 	@param last Iterator pointing to last element
