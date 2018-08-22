@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{b20bdc98-b143-4360-bab9-eb1896ef8a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tests">
+      <UniqueIdentifier>{9691c223-8975-407c-ab21-516923d278f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Licenta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecisionTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Queries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolsTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TableControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestsControler.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="CarTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBaseTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="QueriesTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TableControlerTests.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfusionMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Car.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecisionTree.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Queries.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TableControler.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsTests.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="TestsControler.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="CarTests.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBaseTests.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="QueriesTests.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="TableControlerTests.h">
+      <Filter>Resource Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfusionMatrix.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+[2018-08-19 15:56:40] [info] Start Program:
+Path:"C:\Users\Andrei\Desktop\Licenta\Licenta\x64\Debug\Licenta.exe"
+Arguments:
+Working directory: "C:\Users\Andrei\Desktop\Licenta\Licenta\"
+Modules: Selected: C:\Users\Andrei\Desktop\Licenta\Licenta\x64\Debug\Licenta.exe Excluded: 
+Sources: Selected: C:\Users\Andrei\Desktop\Licenta\Licenta Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Andrei\AppData\Local\Temp\ccxplmyt.v5o 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+
+[2018-08-19 15:56:40] [info] Module: C:\Users\Andrei\Desktop\Licenta\Licenta\x64\Debug\Licenta.exe is selected because it matches selected pattern: C:\Users\Andrei\Desktop\Licenta\Licenta\x64\Debug\Licenta.exe
+[2018-08-19 15:56:40] [info] Module: C:\Windows\System32\ntdll.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\kernel32.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\KernelBase.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\msvcp140d.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\vcruntime140d.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\ucrtbased.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-localization-l1-2-0.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-processthreads-l1-1-1.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-file-l1-2-0.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-timezone-l1-1-0.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-file-l2-1-0.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:41] [info] Module: C:\Windows\System32\api-ms-win-core-synch-l1-2-0.dll is skipped because it matches no selected patterns
+[2018-08-19 15:56:51] [info] Module: C:\Windows\System32\apphelp.dll is skipped because it matches no selected patterns
+[2018-08-19 15:57:00] [info] ----------------------------------------------------
+[2018-08-19 15:57:00] [info] Coverage binary generated in file: C:\Users\Andrei\AppData\Local\Temp\ccxplmyt.v5o
+[2018-08-19 15:57:00] [info] ----------------------------------------------------
